@@ -20,6 +20,7 @@ amqp.connect("amqp://localhost:5672", function (error0, connection) {
       if (msg.content.toString() === "Hello World!") {
         channel.ack(msg);
       }
+      added acknowledment setup
     });
   });
 });
